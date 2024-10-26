@@ -17,7 +17,7 @@ In this project user has to create a password generator, which allows the users 
 
 ## Output
 
-![expected output](\dist\assets\passwordGeneratorContainer.PNG)
-![expected output](\dist\assets\randomPasswordGeneratedAndCopiedToClipboard.PNG)
-![expected output](\dist\assets\passwordLengthLessThan3OrGreaterThan21.PNG)
-![expected output](\dist\assets\checkedAtLeastOneCharacterSetCheckboxToGeneratePassword.PNG)
+![expected output](/dist/assets/passwordGeneratorContainer.PNG)
+![expected output](/dist/assets/randomPasswordGeneratedAndCopiedToClipboard.PNG)
+![expected output](/dist/assets/passwordLengthLessThan3OrGreaterThan21.PNG)
+![expected output](/dist/assets/checkedAtLeastOneCharacterSetCheckboxToGeneratePassword.PNG)
