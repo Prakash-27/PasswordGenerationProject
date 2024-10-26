@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generation Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-screen flex justify-center items-center bg-[#1B1B3A]">
+    <div 
+      id="password-generator-container"
+      class="text-white w-[300px] border rounded px-2 py-4 flex flex-col justify-center items-center gap-4 md:w-[500px] md:px-12"
+    >
+        <h2 class="text-3xl font-semibold">Password Generator</h2>
+
+        <div id="result-container" class="w-full flex justify-center">
+            <input 
+              type="text" name="result" id="result" placeholder="click on Generate button"
+              class="w-[90%] bg-white h-7 px-2 py-3 rounded text-sm text-gray-400 outline-none md:w-[85%] md:text-lg md:outline-none"
+            />
+        </div>
+
+        <span id="showError" class="w-full text-center md:w-96"></span>
+
+        <div>
+            <button id="generate" class="bg-[#9881FF] rounded px-2 py-2 font-bold mr-2 scale-100 hover:scale-[1.07] focus:scale-[1.0] md:text-base md:px-7 md:py-1">Generate</button>
+            <button id="clipboard" class="bg-[#9881FF] rounded px-2 py-2 font-bold scale-100 hover:scale-[1.07] focus:scale-[1.0] md:text-base md:px-7 md:py-1">Copy To Clipboard</button>
+        </div>
+
+        <div class="w-full  font-bold p-5 md:text-lg">
+            <div class="flex justify-between">
+                <label for="length">Password Length</label>
+                <input 
+                 type="number" name="length" id="length" min="4" max="20" value="12" 
+                 class="bg-transparent border rounded px-1"
+                />
+            </div>
+            <div class="flex justify-between">
+                <label for="uppercase">Include uppercase letters</label>
+                <input type="checkbox" name="uppercase" id="uppercase" checked />
+            </div>
+            <div class="flex justify-between">
+                <label for="lowercase">Include lowercase letters</label>
+                <input type="checkbox" name="lowercase" id="lowercase" checked />
+            </div>
+            <div class="flex justify-between">
+                <label for="numbers">Include numbers</label>
+                <input type="checkbox" name="numbers" id="numbers" checked />
+            </div>
+            <div class="flex justify-between">
+                <label for="symbols">Include symbols</label>
+                <input type="checkbox" name="symbols" id="symbols" checked />
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
